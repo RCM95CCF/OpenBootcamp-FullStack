@@ -1,4 +1,4 @@
-public class Ejercicos_tema_3_Parte1 {
+public class introduccion_tema_3_parte1 {
 
     public static void main(String[] args) {
         int resultado = 0;
