@@ -1,0 +1,46 @@
+public class introduccion_tema_9 {
+	
+	public static void main (String[] args) {
+		Cliente cliente = new Cliente();
+        Trabajador trabajador = new Trabajador();
+
+        cliente.edad = 25;
+        cliente.nombre = "Juan Perez";
+        cliente.telefono = 555123321;
+        cliente.credito = (float)12344.45;
+
+        trabajador.edad = 45;
+        trabajador.nombre = "Paco Pérez Gómez";
+        trabajador.telefono = 685214753;
+        trabajador.salario = (float)1.70;
+
+        System.out.println("Nombre del cliente: " + cliente.nombre);
+        System.out.println("Edad del cliente: " + cliente.edad + " años");
+        System.out.println("Teléfono del cliente: " + cliente.telefono);
+        System.out.println("Crédito del cliente: $" + cliente.credito);
+        
+        System.out.println();
+
+        System.out.println("Nombre del trabajador: " + trabajador.nombre);
+        System.out.println("Edad del trabajador: " + trabajador.edad + " años");
+        System.out.println("Teléfono del trabajador: " + trabajador.telefono);
+        System.out.println("Salario del trabajador: $" + trabajador.salario);
+	}
+}
+
+
+class Persona {
+    public int edad;
+    public String nombre;
+    public int telefono;
+}
+
+
+class Cliente extends Persona {
+    public float credito; 
+}
+
+
+class Trabajador extends Persona {
+    public float salario;
+}
